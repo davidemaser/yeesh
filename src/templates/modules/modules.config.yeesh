@@ -1,4 +1,5 @@
 {
+  "readAs":"json",
   "modules":[
     {
       "user":{
