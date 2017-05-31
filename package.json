@@ -1,0 +1,19 @@
+{
+  "name": "yeesh",
+  "version": "0.0.1",
+  "description": "Yeesh is a javascript template engine that renders html content",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "webpack"
+  },
+  "author": "David Maser",
+  "license": "MIT",
+  "devDependencies": {
+    "html-webpack-plugin": "^2.28.0",
+    "webpack": "^2.6.1"
+  }
+}
