@@ -1,0 +1,9 @@
+[process]html params={lang='en'}[/process]
+[process]header.yeesh[/process]
+[repeat 2]
+    div {class=this*i}
+    section {class='',id=''}
+    [if time equals 10] section [\if]
+    [process]user[/process]
+[\repeat]
+[process]footer.yeesh[/process]

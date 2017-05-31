@@ -1,0 +1,18 @@
+{
+  "config":{
+    "nameSpace":["yeesh","yee"],
+    "required":true,
+    "renders":{
+      "input":["javascript","*.js","*.json"],
+      "output":"html",
+      "version":"es6",
+      "compiler":["webpack","babel"]
+    },
+    "modules":[
+      "bind",
+      {
+
+      }
+    ]
+  }
+}

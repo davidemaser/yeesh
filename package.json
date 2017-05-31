@@ -4,7 +4,7 @@
   "description": "Yeesh is a javascript template engine that renders html content",
   "main": "app.js",
   "directories": {
-    "test": "test"
+    "test": ["test","demo","data"]
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

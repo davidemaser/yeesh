@@ -1,0 +1,16 @@
+{
+  "modules":[
+    {
+      "user":{
+        "file":"user.yeesh",
+        "unique":true,
+        "required":false
+      },
+      "html":{
+        "file":"html.yeesh",
+        "unique":true,
+        "required":true
+      }
+    }
+  ]
+}
