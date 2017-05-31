@@ -28,5 +28,3 @@ export default class Yeesh{
 
   }
 }
-
-new Yeesh.run();

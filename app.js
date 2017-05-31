@@ -1,6 +1,16 @@
-import './src/index';
+import Yeesh from './src/index';
 const runOnStart = true;
 const get={
   config : () => {},
-  loader : () => {}
+  loader : () => {},
+  scenarios : (args) => {}
 };
+const set={
+  config : (args,root) => {}
+};
+
+export default class AppLoader{
+
+}
+
+new Yeesh();
