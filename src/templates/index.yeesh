@@ -1,11 +1,12 @@
-[process]html params={lang='en'}[/process]
-[process]header.yeesh[/process]
 [create]
     [constant]something 160[/constant]
-    [var enforce text]else this text[/var] /**@todo document enforcers*/
+    [var enforce text]this text[/var] /**@todo document enforcers*/
     [object]obj[/object]
     [array]one,two,three,four[/array] /**will be split as an array*/
 [/create]
+
+[process]html params={lang='en'}[/process]
+[process]header.yeesh[/process]
 [repeat 2]
     div {class=this*i}
     section {class='',id=''}
@@ -13,3 +14,5 @@
     [process]user[/process]
 [\repeat]
 [process]footer.yeesh[/process]
+[output][/output]
+[function][/function]
