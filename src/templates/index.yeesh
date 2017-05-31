@@ -1,5 +1,11 @@
 [process]html params={lang='en'}[/process]
 [process]header.yeesh[/process]
+[create]
+    [constant]something 160[/constant]
+    [var enforce text]else this text[/var] /**@todo document enforcers*/
+    [object]obj[/object]
+    [array]one,two,three,four[/array] /**will be split as an array*/
+[/create]
 [repeat 2]
     div {class=this*i}
     section {class='',id=''}
