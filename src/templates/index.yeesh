@@ -1,18 +1,21 @@
-[create]
-    [constant accept @all]something 160[/constant]
-    [var accept @text]this text[/var][comment]@todo document enforcers[/comment]
-    [object]obj[/object]
-    [array]one,two,three,four[/array][comment]will be split as an array[/comment]
-[/create]
-
-[process]html params={lang='en'}[/process]
-[process]header.yeesh[/process]
-[repeat 2]
-    div {class=this*i}
-    section {class='',id=''}
-    [if time equals 10] section [\if]
-    [process]user[/process]
-[\repeat]
-[process]footer.yeesh[/process]
-[output][/output]
-[function][/function]
+<define mask>
+    Define document properties. Add argument mask for this block to be hidden
+</define>
+<bind public="name">
+    <constant accept="all">something 160</constant>
+    <var accept="text">this text</var><comment>@todo document enforcers</comment>
+    <object>obj</object>
+    <array>one,two,three,four</array><comment>will be split as an array</comment>
+    <function public="nameSpace"></function>
+</bind>
+<input />
+<process>{~header.yeesh}</process>
+<repeat 2>
+    <div {class="this*i"} />
+    <section ~class="",id=""} />
+    <if {time} equals 10>
+        <process>{~user.yeesh}</process>
+    </if>
+</repeat>
+<process>{~footer.yeesh}</process>
+<output />

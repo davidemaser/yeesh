@@ -1,12 +1,64 @@
 /**
  * Created by David Maser on 31/05/2017.
  */
-export default class Translate{
-  constructor(model,args){
-    this.model = model;
-    this.args = args;
+import nm from '../Templates';
+const Translate = {
+  yNodes:[
+    {
+      tag:'create',
+      accepts:'all',
+      excludes:null,
+      strict:false
+    },{
+      tag:'constant',
+      accepts:'const',
+      modifiers:[
+        {
+          tag:'',
+          arguments:''
+        }
+      ],
+      excludes:null,
+      strict:true
+    },{
+      tag:'var',
+      accepts:'var',
+      modifiers:[
+        {
+          tag:'',
+          arguments:''
+        }
+      ],
+      excludes:null,
+      strict:true
+    },{
+      tag:'object',
+      accepts:'object',
+      modifiers:[
+        {
+          tag:'',
+          arguments:''
+        }
+      ],
+      excludes:null,
+      strict:true
+    },{
+      tag:'array',
+      accepts:'array',
+      modifiers:[
+        {
+          tag:'',
+          arguments:''
+        }
+      ],
+      excludes:null,
+      strict:true
+    }
+  ],
+  init:function(){
+    nm('haha');
+    console.log(this.yNodes);
   }
-  getStructure(){
+};
 
-  }
-}
+export default Translate;
