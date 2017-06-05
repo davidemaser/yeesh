@@ -1,8 +1,8 @@
 [create]
-    [constant]something 160[/constant]
-    [var enforce text]this text[/var] /**@todo document enforcers*/
+    [constant accept @all]something 160[/constant]
+    [var accept @text]this text[/var][comment]@todo document enforcers[/comment]
     [object]obj[/object]
-    [array]one,two,three,four[/array] /**will be split as an array*/
+    [array]one,two,three,four[/array][comment]will be split as an array[/comment]
 [/create]
 
 [process]html params={lang='en'}[/process]
