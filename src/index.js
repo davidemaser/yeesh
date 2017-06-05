@@ -1,30 +1,17 @@
 export default class Yeesh{
-  constructor(){
-    this.conf={
-      parse:'html',
-      on:{
-        error:['log','exit'],
-        exit:'quit',
-        load:['jquery','parse']
-      },
-      state:{
+  constructor(url){
+      this.url = url;
+  }
 
-      }
+  getTemplate() {
+    function reqListener () {
+      console.log(this.responseText);
+      this.readModel(this.responseText);
+      return this.responseText;
     }
-  }
-  run(){
-
-  }
-  assert(hasAuth,needsAuth,canPush){
-    this.assertions = {
-      hasAuth : hasAuth || true,
-      needsAuth : needsAuth ||false,
-      canPush : canPush || false
-    };
-    let __propA = this.propertyIsEnumerable(this.assertions);
-    return __propA.hasOwnProperty('auth');
-  }
-  emit(frequency,origin,destination){
-
+    let oReq = new XMLHttpRequest();
+    oReq.addEventListener("load", reqListener);
+    oReq.open('GET', this.url);
+    oReq.send();
   }
 }

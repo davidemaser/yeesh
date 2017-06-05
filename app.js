@@ -1,17 +1,10 @@
 import Yeesh from './src/index';
 import Translate from './src/templates/translators/Translate';
-const runOnStart = true;
-const get={
-  config : () => {},
-  loader : () => {},
-  scenarios : (args) => {}
-};
-const set={
-  config : (args,root) => {}
+const Config = {
+  templateMapping:'../src/templates/',
+  defaultExtension:'yeesh'
 };
 
-export default class AppLoader{
-
-}
-console.log(Translate);
-new Yeesh();
+let a = new Yeesh(`${Config.templateMapping}index.${Config.defaultExtension}`);
+let b = a.getTemplate();
+console.log(b);
