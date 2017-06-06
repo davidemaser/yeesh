@@ -6,7 +6,6 @@ export default class Yeesh{
   getTemplate() {
     function reqListener () {
       console.log(this.responseText);
-      this.readModel(this.responseText);
       return this.responseText;
     }
     let oReq = new XMLHttpRequest();
