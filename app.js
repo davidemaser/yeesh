@@ -9,4 +9,4 @@ const Config = {
 
 let a = new Yeesh(`${Config.templateMapping}index.${Config.defaultExtension}`);
 let b = a.getTemplate();
-console.log(b);
+let c = Translate.init().yNodes;

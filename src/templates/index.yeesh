@@ -1,9 +1,9 @@
 <define mask>
     Define document properties. Add argument mask for this block to be hidden
 </define>
-<bind public="name">
-    <constant accept="all">something 160</constant>
-    <var accept="text">this text</var><comment>@todo document enforcers</comment>
+<bind public=name>
+    <constant accept=all>something 160</constant>
+    <var accept=text>this text</var><comment>@todo document enforcers</comment>
     <object>obj</object>
     <array>one,two,three,four</array><comment>will be split as an array</comment>
     <function public="nameSpace"></function>
@@ -11,9 +11,10 @@
 <input />
 <process>{~header.yeesh}</process>
 <repeat 2>
+    <table rows={count="auto" max=5},columns=3,header=["first" "second" "third"],data={bind="" node=""}/>
     <div {class="this*i"} />
-    <section ~class="",id=""} />
-    <if {time} equals 10>
+    <section {class="" id=""} />
+    <if time equals 10>
         <process>{~user.yeesh}</process>
     </if>
 </repeat>

@@ -2,7 +2,7 @@
  * Created by David Maser on 31/05/2017.
  */
 import nm from '../Templates';
-const Translate = {
+export const Translate = {
   yNodes:[
     {
       tag:'create',
@@ -60,5 +60,3 @@ const Translate = {
     console.log(this.yNodes);
   }
 };
-
-export default Translate;
