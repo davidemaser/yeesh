@@ -1,3 +1,5 @@
+import * as Utilites from './functions/Utilities';
+
 export default class Yeesh{
   constructor(url){
       this.url = url;
@@ -5,7 +7,7 @@ export default class Yeesh{
 
   getTemplate() {
     function reqListener () {
-      console.log(this.responseText);
+      Utilites.splicer(this.responseText);
       return this.responseText;
     }
     let oReq = new XMLHttpRequest();
